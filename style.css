@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #4c5270;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Dynapuff;
+}
+.outerdiv{
+    background-color: black;
+    border-radius: 15px;
+    height: 500px;
+    padding: 30px;    
+  width: 90%;
+  max-width: 500px;
+
+
+}
+.innerdiv{
+    height:100%;
+}
+.headingtodo{
+    height: 80px;
+    background-color: #b3b3b3;
+    border-radius: 15px;
+    margin-bottom:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+   
+}
+.inputbox{
+    display: flex; flex-direction: row;justify-content: space-between;margin-bottom: 15px;
+}
+input{
+    height: 15px;background-color: #f3f0ff;border-radius: 15px; width:300px; padding:20px;font-family: Dynapuff;font-size:19px
+}
+#addbutton{
+    width: 150px; background-color: #bbe7f5;font-family:Dynapuff;border-radius: 15px;font-size: 23px;cursor: pointer;
+}
+.addedtodo{
+    height:300px;padding-left:0px;padding-top:5px;border-radius: 15px;
+    overflow-y: auto; 
+}
+.textandbuttoncontainer{
+    display: flex; justify-content: space-between;flex-direction: row;align-items: center;
+    
+}
+.addedtodo::-webkit-scrollbar {
+  width: 10px;
+}
+.addedtodo::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+p{
+    background-color: white;padding:15px;color:black;font-size: 19px;;border-radius: 15px;margin-bottom: 15px; flex: 1;                  
+    margin-right: 10px;     
+    word-break: break-word; 
+}
+.todo-actions{
+    border-radius: 15px;background-color: black;height:52px;width:150px;margin-bottom: 15px;
+}
+.btn-edit{
+    background-color:#ffbd59 ;width: 70px;padding:15px;border-radius: 15px;height:50px;font-family: Dynapuff;font-size: 12px;border-style: none;cursor: pointer;margin-right: 5px;
+}
+.btn-remove{
+    background-color:#ff3131 ;width: 70px;padding:15px;border-radius: 15px;height:50px;font-family: Dynapuff;font-size: 12px;border-style: none;cursor: pointer;
+}
