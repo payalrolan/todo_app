@@ -2,9 +2,9 @@ window.onload = function () {
     const saved = JSON.parse(localStorage.getItem("todos")) || [];
     saved.forEach(todo => {
         document.querySelector("input").value = todo;
-        addTodo(); // reuses addTodo with input value
+        addTodo(); 
     });
-    document.querySelector("input").value = ""; // clear input after load
+    document.querySelector("input").value = ""; 
 };
 
 function saveTodos() {
@@ -36,7 +36,7 @@ function addTodo(){
     outerdiv.appendChild(paragraph);
     outerdiv.appendChild(innerdiv);
     document.querySelector(".addedtodo").appendChild(outerdiv);
-     // Edit button logic
+    
     editbutton.onclick = function () {
         if (editbutton.innerText === "edit") {
             const input = document.createElement("input");
